@@ -1,0 +1,162 @@
+/* poppins font import link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#000;
+    --secondary-color:#fff;
+    --background-color:#002147;
+    --background-button:#0EA5E9;
+    
+}
+/**preloader css start here*/
+#pre-loader{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    z-index: 200;
+    background:#000 url(/asset/loader/loader.gif) center no-repeat;
+    background-size: 100px 100px;
+    
+}
+
+.btn-primary{
+    background-color: var(--background-button);
+}
+/**header css start here */
+.header{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 2fr;
+    height: max-content;
+    background-color: var(--background-color);
+}
+.logo{
+    color: beige;
+    font-size: 900;
+    font-family: 'Concert One', cursive;
+    cursor: pointer;
+    padding: 0.8rem;
+    font-size: larger;
+}
+nav ul{
+    display: flex;
+   justify-content: end;
+   margin: 1rem;
+}
+nav li{
+    position: relative;
+    padding-right: 1rem;
+}
+nav a{
+    color: var(--secondary-color);
+    opacity: 0.7;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    opacity: 1;
+    color: #279EFF;
+    
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #279EFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.meet-team{
+    display: none;
+    
+}
+nav ul li:hover div{
+    display: block;
+    width: max-content;
+    position: absolute;
+    top: 100%;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    z-index: 100;
+}
+nav ul li:hover .meet-team ul{
+    display: block;
+   }
+   nav ul li:hover .meet-team ul li{
+    padding-top: 5px;
+   }
+.meet-team a:hover{
+    color:#279EFF;
+} 
+
+
+/* carousel css start */
+
+/* My Project section css start here */
+#container{
+    padding: 1rem;
+    background:linear-gradient(to left,#002147,#0e002c,#002147);
+    height: max-content;
+    
+}
+.project-heading{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2em;
+}
+.card{
+    margin: 1rem;
+    backdrop-filter: blur(8px);
+    background-color: #fff;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1rem;
+    height: 70vh;
+}
+.project-author{
+    
+    font-size: small;
+    cursor: pointer;
+}
+.project-author a{
+    font-family: cursive;
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** MEDIA QUERIES START HERE*/
+@media(max-width:1360px){
+ #container{
+    height: 130vh;
+ }
+}
