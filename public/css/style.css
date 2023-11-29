@@ -104,6 +104,11 @@ nav ul li:hover .meet-team ul{
 
 
 
+/*resume section */
+.resume-section{
+    min-height: 100vh;
+    overflow: auto;
+}
 
 
 

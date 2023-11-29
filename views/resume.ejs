@@ -1,11 +1,90 @@
 <% layout("/layouts/boilerplate") %>
-<body>
-    <div class="container text-center bg-primary">
-        <div class="row">
-            <div class="col-3 bg-primary">Resume</div>
-            <div class="col-9 bg-secondary">Resume</div>
+
+    <body>
+        <div class="container bg-primary my-2">
+            <div class="row">
+                <!--------------------------resume form section---------------------->
+                <div class="col-3 bg-primary">Resume
+                    <div class="form">
+                        <div>
+                            <label for="i-name" class="form-label my-1">Full Name:</label>
+                            <input type="text" name="fullName" class="form-control" id="i-name"
+                                placeholder="Enter Name" oninput="updateResume()">
+                        </div>
+
+                        <div>
+                            <label for="i-email" class="form-label my-1">Email:</label>
+                            <input type="email" name="email" class="form-control" id="i-email"
+                                placeholder="Enter Email" oninput="updateResume()">
+                        </div>
+
+                        <div>
+                            <label for="i-mob" class="form-label my-1">Mobile No:</label>
+                            <input type="number" name="mobile" class="form-control" id="i-mob"
+                                placeholder="Enter Mobile No." oninput="updateResume()">
+                        </div>
+
+                        <div>
+                            <label for="i-address" class="form-label my-1">Address :</label>
+                            <input type="text" name="address" class="form-control" id="i-address"
+                                placeholder="Enter Address" oninput="updateResume()">
+                        </div>
+
+                        <div>
+                            <label for="i-job-title" class="form-label my-1">Job Title :</label>
+                            <input type="text" name="jobtitle" class="form-control" id="i-job-title"
+                                placeholder="Eg: Web developer" oninput="updateResume()">
+                        </div>
+
+                        <div>
+                            <label for="i-link" class="form-label my-1">Link :</label>
+                            <input type="text" name="jobtitle" class="form-control" id="i-link"
+                                placeholder="www.google.com" oninput="updateResume()">
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!---------------------------resume section -------------------------------->
+                <div class="col-9 bg-secondary">
+                    <h2>Resume</h2>
+                    <div class="container resume-section bg-light">
+                        <div class="row">
+                            <h4 class="text-center text-capitalize" id="o-name">Name</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-center" id="o-email">Email</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <p id="o-mob" class="text-right">Mobile No</p>
+                                <p id="o-address" class="text-center">Address</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <p id="o-job-title">Job Title:</p>
+                            </div>
+                            <div class="col">
+                                <a href="#" id="o-a-link">Link</a>
+                            </div>
+                        </div>
+                        <hr/>
+                        <!---------------Name to link section end here-->
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
         </div>
-    
-    
-    </div>
-</body>
+    </body>
