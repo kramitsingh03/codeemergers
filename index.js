@@ -28,7 +28,12 @@ app.use(express.static(path.join(__dirname,"public")));
 
 //main page
 app.get("/",(req,res)=>{
-    res.render("index")
+    res.render("index");
+});
+
+//resume page
+app.get("/resume",(req,res)=>{
+    res.render("resume");
 })
 
 
