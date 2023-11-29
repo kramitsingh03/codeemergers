@@ -8,14 +8,14 @@
                     <div class="form">
                         <div>
                             <label for="i-name" class="form-label my-1">Full Name:</label>
-                            <input type="text" name="fullName" class="form-control" id="i-name"
-                                placeholder="Enter Name" oninput="updateResume()">
+                            <input type="text" name="fullName" class="form-control" id="i-name" placeholder="Enter Name"
+                                oninput="updateResume()">
                         </div>
 
                         <div>
                             <label for="i-email" class="form-label my-1">Email:</label>
-                            <input type="email" name="email" class="form-control" id="i-email"
-                                placeholder="Enter Email" oninput="updateResume()">
+                            <input type="email" name="email" class="form-control" id="i-email" placeholder="Enter Email"
+                                oninput="updateResume()">
                         </div>
 
                         <div>
@@ -42,6 +42,42 @@
                                 placeholder="www.google.com" oninput="updateResume()">
                         </div>
 
+                        <hr />
+
+                        <div>
+                            <label for="i-education" class="form-label my-1">Education :</label>
+                            <input type="text" name="education" class="form-control" id="i-education"
+                                placeholder="Eg: IIT Delhi" oninput="updateResume()">
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-6"> <label for="i-start-month" class="form-label my-1">Start Month /
+                                    Year:</label>
+                                <input type="text" name="startMonth" class="form-control" id="i-start-month"
+                                    placeholder="march 2017" oninput="updateResume()">
+                            </div>
+                            <div class="col-6"> <label for="i-grad-month" class="form-label my-1">Grad Month /
+                                    Year:</label>
+                                <input type="text" name="gradMonth" class="form-control" id="i-grad-month"
+                                    placeholder="may 2019" oninput="updateResume()">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6"> <label for="i-course" class="form-label my-1">Course :</label>
+                                <input type="text" name="course" class="form-control" id="i-course"
+                                    placeholder="Eg : B.Tech" oninput="updateResume()">
+                            </div>
+                            <div class="col-6"> <label for="i-location" class="form-label my-1">Location</label>
+                                <input type="text" name="location" class="form-control" id="i-location"
+                                    placeholder="Delhi" oninput="updateResume()">
+                            </div>
+
+
+
+                        </div>
+
 
 
                     </div>
@@ -55,16 +91,12 @@
                         </div>
 
                         <div class="row">
-                            <div class="col">
-                                <p class="text-center" id="o-email">Email</p>
+                            <div class="col-5">
+                                <p class="text-end" id="o-email">Email</p>
                             </div>
-                        </div>
+                            <div class="col-2"><p id="o-mob">Mobile No</p></div>
+                            <div class="col-5"> <p id="o-address" class="text-start">Address</p></div>
 
-                        <div class="row">
-                            <div class="col">
-                                <p id="o-mob" class="text-right">Mobile No</p>
-                                <p id="o-address" class="text-center">Address</p>
-                            </div>
                         </div>
 
                         <div class="row">
@@ -75,8 +107,39 @@
                                 <a href="#" id="o-a-link">Link</a>
                             </div>
                         </div>
-                        <hr/>
+                        <hr />
                         <!---------------Name to link section end here-->
+                        <div class="row">
+                            <h4>Education</h4>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 id="o-education">School Of Engineering</h5>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p id="o-month">July 2019</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 id="o-course">B.Tech</h6>
+                            </div>
+                            <div class="col-6 text-end">
+                                <p id="o-location">Kochi</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <p>Cgpa 9.99</p>
+                        </div>
+
+
+
+
+
+
 
                     </div>
                 </div>
