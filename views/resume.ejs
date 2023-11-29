@@ -1,11 +1,11 @@
 <% layout("/layouts/boilerplate") %>
 
     <body>
-        <div class="container bg-primary my-2">
-            <div class="row">
+        <div class="container bg-primary my-2 p-0">
+            <div class="row p-0">
                 <!--------------------------resume form section---------------------->
                 <div class="col-3 bg-primary">Resume
-                    <div class="form">
+                    <div class="form resume-section px-3">
                         <div>
                             <label for="i-name" class="form-label my-1">Full Name:</label>
                             <input type="text" name="fullName" class="form-control" id="i-name" placeholder="Enter Name"
@@ -43,6 +43,7 @@
                         </div>
 
                         <hr />
+                        <!----Education section start here-->
 
                         <div>
                             <label for="i-education" class="form-label my-1">Education :</label>
@@ -69,20 +70,46 @@
                                 <input type="text" name="course" class="form-control" id="i-course"
                                     placeholder="Eg : B.Tech" oninput="updateResume()">
                             </div>
-                            <div class="col-6"> <label for="i-location" class="form-label my-1">Location</label>
+                            <div class="col-6"> <label for="i-location" class="form-label my-1">Location :</label>
                                 <input type="text" name="location" class="form-control" id="i-location"
                                     placeholder="Delhi" oninput="updateResume()">
                             </div>
 
-
-
                         </div>
-
+                        <div class="row">
+                            <div class="col-12"><label for="i-grade" class="form-label my-1">Grade :</label>
+                                <input type="text" name="course" class="form-control" id="i-grade" placeholder="9.6"
+                                    oninput="updateResume()">
+                            </div>
+                        </div>
+                        <hr />
+                        <!---------Education Section End here-------------->
+                        <!---------Technical section Start here-------------->
+                        <div class="container">
+                            <div class="row"> <label for="i-prog-lang" class="form-label my-1">Programming Language
+                                    :</label>
+                                <input type="text" name="progLang" class="form-control" id="i-prog-lang"
+                                    placeholder="Eg:C++,Java" oninput="updateResume()">
+                            </div>
+                            <div class="row"> <label for="i-markup" class="form-label my-1">Markup & Scripting Language
+                                    :</label>
+                                <input type="text" name="markup" class="form-control" id="i-markup"
+                                    placeholder="Eg:Html" oninput="updateResume()">
+                            </div>
+                            <div class="row"> <label for="i-tools" class="form-label my-1">Tools & IDE :</label>
+                                <input type="text" name="tools" class="form-control" id="i-tools"
+                                    placeholder="Eg:Vs Code" oninput="updateResume()">
+                            </div>
+                            <div class="row"> <label for="i-database" class="form-label my-1">Database :</label>
+                                <input type="text" name="database" class="form-control" id="i-database"
+                                    placeholder="Eg:MongoDB" oninput="updateResume()">
+                            </div>
+                        </div>
 
 
                     </div>
                 </div>
-                <!---------------------------resume section -------------------------------->
+<!-----------------------------------------------resume section ----------------------------------------------------------->
                 <div class="col-9 bg-secondary">
                     <h2>Resume</h2>
                     <div class="container resume-section bg-light">
@@ -94,8 +121,12 @@
                             <div class="col-5">
                                 <p class="text-end" id="o-email">Email</p>
                             </div>
-                            <div class="col-2"><p id="o-mob">Mobile No</p></div>
-                            <div class="col-5"> <p id="o-address" class="text-start">Address</p></div>
+                            <div class="col-2">
+                                <p id="o-mob">Mobile No</p>
+                            </div>
+                            <div class="col-5">
+                                <p id="o-address" class="text-start">Address</p>
+                            </div>
 
                         </div>
 
@@ -132,10 +163,26 @@
                         </div>
 
                         <div class="row">
-                            <p>Cgpa 9.99</p>
+                            <p id="o-grade">Cgpa 9.99</p>
                         </div>
 
-
+                        <hr />
+                        <!------------Technical Skills-->
+                        <div class="container p-0">
+                            <h4>Technical Skills</h4>
+                            <div class="row">
+                                <p>Programming Language : <b id="o-prog-lang">C++</b></p>
+                            </div>
+                            <div class="row">
+                                <p>Markup & Scripting Language : <b id="o-markup">Html</b></p>
+                            </div>
+                            <div class="row">
+                                <p>Tools & IDE : <b id="o-tools">Vs Code</b></p>
+                            </div>
+                            <div class="row">
+                                <p>Database : <b id="o-database">MongoDB</b></p>
+                            </div>
+                        </div>
 
 
 

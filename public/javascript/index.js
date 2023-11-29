@@ -33,6 +33,16 @@ function updateResume (){
     const Ocourse = document.getElementById("o-course");
     const Ilocation = document.getElementById("i-location").value;
     const Olocation = document.getElementById("o-location");
+    const Igrade = document.getElementById("i-grade").value;
+    const Ograde = document.getElementById("o-grade");
+    const IprogLang = document.getElementById("i-prog-lang").value;
+    const OprogLang = document.getElementById("o-prog-lang");
+    const ImarkUp = document.getElementById("i-markup").value;
+    const OmarkUp = document.getElementById("o-markup");
+    const Itools = document.getElementById("i-tools").value;
+    const Otools = document.getElementById("o-tools");
+    const Idatabase = document.getElementById("i-database").value;
+    const Odatabase = document.getElementById("o-database");
 
     Oname.innerText = Iname;
     Oemail.innerText = Iemail;
@@ -45,44 +55,14 @@ function updateResume (){
     Omonth.textContent = `${IstartMonth} - ${IgradMonth}`;
     Ocourse.innerText = Icourse;
     Olocation.innerText = Ilocation;
+    Ograde.innerText = Igrade;
+    OprogLang.innerText = IprogLang;
+    OmarkUp.innerText = ImarkUp;
+    Otools.innerText = Itools;
+    Odatabase.innerText = Idatabase;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-// let Iname = document.querySelector("#i-name");
-// let Oname = document.querySelector("#o-name");
-// Iname.addEventListener("input",function (){
-//     Oname.innerText = Iname.value;
-//     console.log(Iname.value);
-// });
-
-// let Iemail = document.querySelector("#i-email");
-// let Oemail = document.querySelector("#o-email");
-// Iemail.addEventListener("input",function (){
-//     Oemail.innerText = Iemail.value;
-// });
-
-// let Imob = document.querySelector("#i-mob");
-// let Omob = document.querySelector("#o-mob");
-// Iemail.addEventListener("input",function (){
-//     Omob.innerText = Imob.value;
-// });
-
-// let Iaddress = document.querySelector("#i-address");
-// let Oaddress = document.querySelector("#o-address");
-// Iname.addEventListener("input",updateAddress);
-// function updateAddress(e){
-//     Oaddress.textContent = e.target.value;
-    
-// }
